@@ -54,7 +54,7 @@
 
                                             ]);
                                             if ($rp_query->have_posts()) {
-                                                _e('Related posts: ', 'mars');
+                                                _e('<p>Related posts:</p>', 'mars');
                                                 while ($rp_query->have_posts()) {
                                                     $rp_query->the_post(); ?>
                                                     <div class="rp">
@@ -62,7 +62,7 @@
                                                             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                                         </div>
                                                         <div class="rp-date">
-                                                            <?php echo get_the_date(); ?>
+                                                            <?php echo ", " . get_the_date(); ?>
                                                         </div>
                                                     </div>
  
@@ -76,10 +76,14 @@
                                         <div class="comments-form">
                                             <?php comments_template();?>
                                         </div>
-                                    <?php } ?>
+                                    <?php } 
+                                    if (has_tag()) {
+                                    ?>
+
                                     <div class="tags">
                                         <?php the_tags('', ' ');?>
                                     </div>
+                                     <?php } ?>
                                     <div class="posts-navigation">
                                         <div class="previous-post"><?php previous_post_link();?></div>
                                         <div class="next-post"><?php next_post_link();?></div>

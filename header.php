@@ -14,10 +14,15 @@
                     the_custom_logo();
                 }
                 else {?>
-                    <a href="<?php echo home_url('/') ?>" class="standard-logo">
-                    <?php bloginfo('name');?>
-                    <?php bloginfo('description');?>
+                <a href="<?php echo home_url('/') ?>" class="standard-logo">
+                    <div class="logo-container">
+                        <h1><?php bloginfo('name');?></h1>
+                        <p><?php bloginfo('description');?></p>
+                       
+                    </div>
                 </a>
+
+                
                 <?php } ?>
             </div>
             <nav>

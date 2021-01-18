@@ -1,4 +1,4 @@
-<nav role='navigation'>
+<aside>
   <div id="menuToggle">
     <input type="checkbox" />
     <span></span>
@@ -8,4 +8,4 @@
     <?php get_sidebar();?>
     </ul>
   </div>
-</nav>
+</aside>

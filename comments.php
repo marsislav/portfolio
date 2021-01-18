@@ -10,8 +10,8 @@ if (post_password_required ()) {
             <li class="single-comment">
                 <span class="avatar"><?php echo  get_avatar($comment, 60 , '', '', ['class'=>'user-avatar-img']); ?></span>
                 <div class="comment-author">
-                    <?php comment_author(); ?>
-                    <span class="comment-date"><?php comment_date(); ?></span>
+                    <?php comment_author();?>
+                    <span class="comment-date">, <?php comment_date(); ?></span>
                     <div class="comment-text">
                         <?php comment_text();?>
                     </div>

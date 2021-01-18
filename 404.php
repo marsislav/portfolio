@@ -10,7 +10,7 @@
                         <div class="two-thirds column"><?php _e('Page not found!', 'mars');?></div>
                     </div>
                 </div>
-                <div class="wide-search">
+                <div class="wide-search margin-top">
                     <?php get_search_form (); ?>
                 </div>
                 
