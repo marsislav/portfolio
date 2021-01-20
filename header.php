@@ -42,6 +42,7 @@
                 echo __('Main navigation goes here!', 'mars');
             }
     ?>
+            <div class="mobile-menu-icon"></div>
             </nav>
         </div>
         </header>

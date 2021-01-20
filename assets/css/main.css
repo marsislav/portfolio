@@ -124,9 +124,15 @@ figcaption{
 }
 /*END OF CSS RESET*/
 /*GLOBAL*/
+
 .container {
     max-width: 75%;
     margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
 }
 body {
     line-height: 1;
@@ -368,6 +374,80 @@ header .menuDots li:nth-child(5)::after {
         transform: scale(1, 1) translateY(-142px);
     }
 }
+
+/*MOBILE NAV*/
+.mobile-menu-icon {
+    display:none;
+}
+@media only screen and (max-width: 768px) {
+    main {
+        z-index: -1;
+        top:35px;
+    }
+
+    header .menuDots {
+        top: 58px;
+        position: absolute;
+        height: 100%;
+    }
+
+    header .menuDots ul li {
+        display: none;
+        top: 60px;
+        background-image: radial-gradient(circle, #13636f, #0f5a63, #0b5057, #08474c, #063e41);
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    header .menuDots li:nth-child(1) i,
+    header .menuDots li:nth-child(1)::before,
+    header .menuDots li:nth-child(1)::after,
+    header .menuDots li:nth-child(3) i,
+    header .menuDots li:nth-child(3)::before,
+    header .menuDots li:nth-child(3)::after,
+    header .menuDots li::before,
+    header .menuDots li::after,
+    header .menuDots li:nth-child(2) i,
+    header .menuDots li:nth-child(2)::before,
+    header .menuDots li:nth-child(2)::after,
+    header .menuDots li:nth-child(4) i,
+    header .menuDots li:nth-child(4)::before,
+    header .menuDots li:nth-child(4)::after,
+    header .menuDots li:nth-child(5) i,
+    header .menuDots li:nth-child(5)::before,
+    header .menuDots li:nth-child(5)::after {
+        display: none;
+    }
+
+    div.logoContainer {
+        left: 5px;
+    }
+
+    /*Mobile nav*/
+    .mobile-menu-icon {
+        float: right;
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 40px;
+        z-index: 99999;
+    }
+
+    .mobile-menu-icon:before {
+        display: block;
+        font-family: 'Font Awesome\ 5 Free';
+        content: "\f0c9"; /* FontAwesome Unicode */
+        font-weight: 900;
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .mobile-menu-icon-close:before {
+        font-family: 'Font Awesome\ 5 Free';
+        content: "\f00d";
+        font-weight: 900;
+    }
+}
 /*END OF MAIN MENU*/
 /*HEADER*/
 header .container {
@@ -403,14 +483,23 @@ main .container {
     background: #fff;
     padding:10px;
 }
+.single main .container {
+    padding: 10px 10px 0 10px;
+}
 main i {
         margin-right: 4px;
 }
-ul.entry-meta.clearfix {
-    display: flex;
-    justify-content: space-between;
-
+ul.entry-meta.clearfix li {
+    display: inline-block;
+    margin-right:20px;
 }
+@media only screen and (max-width: 768px) {
+    ul.entry-meta.clearfix li{
+      display:block;
+      text-align:center;
+      margin-right:0
+    }
+  }
 main ul.entry-meta.clearfix li {
     list-style-type: none;
 }
@@ -450,6 +539,7 @@ main .entry-title h2:hover:after {
 }
 main .entry-image img, .entry-content img {
     max-width:100%;
+    height: auto;
 }
 
 .author-info {
@@ -483,8 +573,11 @@ main .posts-navigation {
     position: relative;
     left:-10px;
     padding:10px;
+    display: flex;
+    justify-content: space-between;
 
 }
+
 .pagination * a {
     color:#fff;
     font-size: 24px;
@@ -522,6 +615,17 @@ main .posts-navigation {
 .rp {
     padding: 10px;
     display: flex;
+}
+.comment-form, .comment-notes {
+    margin:15px 0;
+}
+.comment-area textarea, .comment-author-field input, .comment-email-field input, .comment-url-field input {
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(8, 71, 76, 0.4);
+}
+.comment-area, .comment-author-field, .comment-email-field, .comment-url-field {
+    margin:5px 0;
 }
 .comments-form ol.comments-list li {
     list-style-type: none;
@@ -662,14 +766,37 @@ li.single-comment {
 /*END OF SIDEBAR*/
 
 /*FOOTER*/
+@media only screen and (max-width: 768px) {
+    footer {
+      margin-top: 35px;
+    }
+  }
 footer .container .statistic { 
     background: #CACACA;
     padding:10px 10px 2px 10px;
-
+    width: calc(100%);
+    margin-left: -10px;
 }
 footer .container .information {
     background:#B4B4B4;
     padding:10px;
+    width: calc(100%);
+    margin:0 0 40px -10px;
+}
+.copyright {
+    text-align: right;
+}
+@media only screen and (max-width: 768px) {
+    .copyright {
+      margin-top: 10px;
+    }
+  }
+
+ul.social {
+    list-style-type: none;
+}
+ul.social li {
+    display: inline-block;
+    margin-right: 6px;
 }
 /*END OF FOOTER*/
-
