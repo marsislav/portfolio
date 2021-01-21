@@ -21,7 +21,7 @@
                                             <?php 
                                             the_content();
                                             $defaults = array(
-                                                'before'           => '<p class="text-center">' . __( 'Pages:', 'mars' ),
+                                                'before'           => '<p class="text-center">' . __( 'Pages:', 'mp' ),
                                                 'after'            => '</p>'
 
                                             );

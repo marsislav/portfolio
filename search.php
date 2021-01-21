@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="posts">
                     <div class="entry-title">
-                        <h2><?php _e('Search results for: ', 'mars'); the_search_query(); ?></h2>
+                        <h2><?php _e('Search results for: ', 'mp'); the_search_query(); ?></h2>
                     </div>
                     <?php 
                         if (have_posts()) {

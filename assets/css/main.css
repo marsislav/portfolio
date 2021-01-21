@@ -124,7 +124,10 @@ figcaption{
 }
 /*END OF CSS RESET*/
 /*GLOBAL*/
-
+h3 {
+    font-size:24px;
+    margin:10px 0;
+}
 .container {
     max-width: 75%;
     margin: 0 auto;
@@ -194,7 +197,7 @@ a.mainButton  {
     header .menuDots {
         position: relative;
         top: 109px;
-        height: 100%;
+       
     }
 
 
@@ -388,7 +391,7 @@ header .menuDots li:nth-child(5)::after {
     header .menuDots {
         top: 58px;
         position: absolute;
-        height: 100%;
+        
     }
 
     header .menuDots ul li {
@@ -475,13 +478,14 @@ header .logo a {
 /*MAIN*/
 main {
     display: block;
-    position: relative;
+    /*position: relative;*/
     text-align: justify;
     width: 100%;
 }
 main .container {
     background: #fff;
     padding:10px;
+    position: relative;
 }
 .single main .container {
     padding: 10px 10px 0 10px;
@@ -577,7 +581,9 @@ main .posts-navigation {
     justify-content: space-between;
 
 }
-
+.posts  {
+    min-height:400px;
+}
 .pagination * a {
     color:#fff;
     font-size: 24px;
@@ -758,7 +764,7 @@ li.single-comment {
   list-style-type:none;
 }
 
-#menuToggle input:checked ~ ul
+#menuToggle input:checked ~ div
 {
   transform: scale(1.0, 1.0);
   opacity: 1;
@@ -799,4 +805,26 @@ ul.social li {
     display: inline-block;
     margin-right: 6px;
 }
+.counter {
+    float:right;
+}
 /*END OF FOOTER*/
+
+
+/*Meta slider*/
+.metaslider .caption-wrap {
+    text-align:center;
+    background:rgba(0,0,0,0.9)!important;
+
+}
+@media only screen and (max-width: 768px) {
+    body .metaslider .flexslider ul.slides {
+        border:0!important;
+       
+        }
+        .metaslider .caption-wrap {
+            position: relative!important;
+            top:0px!important;
+            min-height: 250px;
+}
+}

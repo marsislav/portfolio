@@ -30,29 +30,29 @@ comment_form([
     'comment_field'         =>  '<div class="comment-form-field"></div>
 
     <div class="comment-area">
-    <label>' . __( 'Comment:', 'mars' ) . '</label>
+    <label>' . __( 'Comment:', 'mp' ) . '</label>
         <textarea name="comment" rows="7" class="sm-form-control"></textarea>
     </div>',
     'fields'                =>  [
         'author'            =>  
             '<div class="comment-author-field">
-                <label>' . __( 'Name:', 'mars' ) . '</label>
+                <label>' . __( 'Name:', 'mp' ) . '</label>
                 <input type="text" name="author" class="sm-form-control" />
             </div>',
         'email'             =>  
             '<div class="comment-email-field">
-                <label>' . __( 'Email:', 'mars' ) . '</label>
+                <label>' . __( 'Email:', 'mp' ) . '</label>
                 <input type="text" name="email" class="sm-form-control" />
             </div>',
         'url'               =>  
             '<div class="comment-url-field">
-                <label>' . __( 'Website:', 'mars' ) . '</label>
+                <label>' . __( 'Website:', 'mp' ) . '</label>
                 <input type="text" name="url" class="sm-form-control" />
             </div>'
     ],
     'class_submit'          =>  'mainButton margin-top',
-    'label_submit'          =>  __( 'Submit Comment', 'mars' ),
-    'title_reply'           =>  __( 'Leave a <span>Comment</span>', 'mars' )
+    'label_submit'          =>  __( 'Submit Comment', 'mp' ),
+    'title_reply'           =>  __( 'Leave a <span>Comment</span>', 'mp' )
 ]);
 
 ?>

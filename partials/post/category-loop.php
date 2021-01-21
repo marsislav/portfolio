@@ -22,6 +22,6 @@
     </ul>
     <div class="entry-content">
             <?php the_excerpt(); ?>
-            <a href="<?php the_permalink (); ?>" class="read-more"><?php _e('Read more', 'mars');?></a>
+            <a href="<?php the_permalink (); ?>" class="read-more"><?php _e('Read more', 'mp');?></a>
     </div>
 

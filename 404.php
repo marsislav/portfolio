@@ -7,7 +7,7 @@
                 <div class="big-text">
                     <div class="row">
                         <div class="one-third column emoji">:(</div>
-                        <div class="two-thirds column"><?php _e('Page not found!', 'mars');?></div>
+                        <div class="two-thirds column"><?php _e('Page not found!', 'mp');?></div>
                     </div>
                 </div>
                 <div class="wide-search margin-top">

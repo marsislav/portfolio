@@ -6,13 +6,13 @@
                 <span>
                     <?php 
                         if (is_year()) {
-                            _e('You are vieweing a year archive', 'mars');
+                            _e('You are vieweing a year archive', 'mp');
                         }
                         else if (is_month()) {
-                            _e('You are vieweing a month archive', 'mars');
+                            _e('You are vieweing a month archive', 'mp');
                         }
                         else if (is_day()) {
-                            _e('You are vieweing a day archive', 'mars');
+                            _e('You are vieweing a day archive', 'mp');
                         }
                     ?>
                 </span>

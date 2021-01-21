@@ -18,7 +18,7 @@ function mp_misc_customizer_section( $wp_customize ){
 
 
     $wp_customize->add_section( 'mp_misc_section', [
-        'title'         =>  __( 'Marsislav - Portfolio Misc Settings', 'mars' ),
+        'title'         =>  __( 'Marsislav - Portfolio Misc Settings', 'mp' ),
         'priority'      =>  30
     ]);
 
@@ -27,7 +27,7 @@ function mp_misc_customizer_section( $wp_customize ){
         $wp_customize,
         'mp_footer_copyright_text',
         array(
-            'label'                 =>  __( 'Footer copyright text', 'mars' ),
+            'label'                 =>  __( 'Footer copyright text', 'mp' ),
             'section'               => 'mp_misc_section',
             'settings'              => 'mp_footer_copyright_text',
             'type'                  =>  'text'
@@ -40,7 +40,7 @@ function mp_misc_customizer_section( $wp_customize ){
         $wp_customize,
         'mp_footer_tos_page_input',
         array(
-            'label'                 =>  __( 'Footer TOS Page', 'mars' ),
+            'label'                 =>  __( 'Footer TOS Page', 'mp' ),
             'section'               => 'mp_misc_section',
             'settings'              => 'mp_footer_tos_page',
             'type'                  =>  'dropdown-pages'
@@ -51,7 +51,7 @@ function mp_misc_customizer_section( $wp_customize ){
         $wp_customize,
         'mp_footer_privacy_page_input',
         array(
-            'label'                 =>  __( 'Footer Privacy Policy Page', 'mars' ),
+            'label'                 =>  __( 'Footer Privacy Policy Page', 'mp' ),
             'section'               => 'mp_misc_section',
             'settings'              => 'mp_footer_privacy_page',
             'type'                  =>  'dropdown-pages'

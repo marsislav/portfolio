@@ -4,8 +4,8 @@
     <span></span>
     <span></span>
     <span></span>
-    <ul id="menu">
+    <div id="menu">
     <?php get_sidebar();?>
-    </ul>
+    </div>
   </div>
 </aside>

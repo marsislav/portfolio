@@ -29,7 +29,7 @@
                                             <?php 
                                             the_content();
                                             $defaults = array(
-                                                'before'           => '<p class="text-center">' . __( 'Pages:', 'mars' ),
+                                                'before'           => '<p class="text-center">' . __( 'Pages:', 'mp' ),
                                                 'after'            => '</p>'
 
                                             );
@@ -38,7 +38,7 @@
                                             ?>
                                     </div>
                                     <div class="author-info">
-                                        <p><?php _e('Posted by: ', 'mars');?> <a href="<?php echo $author_URL; ?>"> <?php the_author() ;?></a> </p>
+                                        <p><?php _e('Posted by: ', 'mp');?> <a href="<?php echo $author_URL; ?>"> <?php the_author() ;?></a> </p>
                                         <div class="author-bio">
                                             <div class="author-image"><?php echo get_avatar($author_ID, 90, '', false, ['class'=>'avatar-img-class'] ); ?></div>
                                             <div class="author-resume"><?php echo nl2br (get_the_author_meta('description'));?></div>
@@ -54,7 +54,7 @@
 
                                             ]);
                                             if ($rp_query->have_posts()) {
-                                                _e('<p>Related posts:</p>', 'mars');
+                                                _e('<p>Related posts:</p>', 'mp');
                                                 while ($rp_query->have_posts()) {
                                                     $rp_query->the_post(); ?>
                                                     <div class="rp">
