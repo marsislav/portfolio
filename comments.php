@@ -4,7 +4,7 @@ if (post_password_required ()) {
 }
 ?>
 <?php if (have_comments()) { ?>
-<div class="active-comments">
+<div class="active-comments" id="comments">
     <ol class="comments-list">
         <?php foreach ($comments as $comment ) { ?>
             <li class="single-comment">
@@ -23,7 +23,7 @@ if (post_password_required ()) {
         ?>
     </ol>
 </div>
-<div class="comment-form">
+<div class="comment-form" >
 <?php
 
 comment_form([

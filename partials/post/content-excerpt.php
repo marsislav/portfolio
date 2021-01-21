@@ -27,7 +27,7 @@
             </div>
             <ul class="entry-meta clearfix"> 
                 <li><i><i class="fas fa-calendar-alt"></i></i><?php echo get_the_date(); ?> </li>
-                <li><a href=""><i><i class="fas fa-comments"></i></i><?php comments_number ('0'); ?> </a> </li>        
+                <li><a href="<?php echo get_comments_link( $post->ID ); ?>"><i><i class="fas fa-comments"></i></i><?php comments_number ('0'); ?> </a> </li>        
                 <li><a href="<?php echo get_author_posts_url(get_the_author_meta('ID'));?>"><i class="fas fa-user-alt"></i> <?php the_author();  ?></a></li>
                     <li><i><i class="fas fa-folder-open"></i></i> <?php the_category(' ');?></li>
                     
