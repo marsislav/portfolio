@@ -2,7 +2,7 @@
         <main>
         <?php get_template_part( 'partials/post/sidebar-expandable'); ?>
             <div class="container">
-                <div class="posts">
+                <div <?php post_class('posts');?> id="post-<?php the_ID(); ?>">
                     <?php 
                         if (have_posts()) {
                             while (have_posts()){

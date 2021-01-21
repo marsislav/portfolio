@@ -385,12 +385,13 @@ header .menuDots li:nth-child(5)::after {
 @media only screen and (max-width: 768px) {
     main {
         z-index: -1;
-        top:35px;
+        margin-top:35px;
     }
 
     header .menuDots {
         top: 58px;
         position: absolute;
+        z-index:9;
         
     }
 
@@ -588,6 +589,13 @@ main .posts-navigation {
     color:#fff;
     font-size: 24px;
 }
+
+@media only screen and (max-width: 768px) {
+    .pagination {
+        display:none;
+    }
+}
+
 .next {
     position: absolute;
     left: 60px;
@@ -772,11 +780,7 @@ li.single-comment {
 /*END OF SIDEBAR*/
 
 /*FOOTER*/
-@media only screen and (max-width: 768px) {
-    footer {
-      margin-top: 35px;
-    }
-  }
+
 footer .container .statistic { 
     background: #CACACA;
     padding:10px 10px 2px 10px;
