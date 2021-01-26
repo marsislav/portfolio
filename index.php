@@ -2,6 +2,9 @@
         <main>
         <?php get_template_part( 'partials/post/sidebar-expandable'); ?>
             <div class="container">
+            <div class="entry-title">
+                <h2><?php _e('Blog', 'mp');?></h2>
+            </div>
                 <div class="posts">
                     <?php 
                         if (have_posts()) {

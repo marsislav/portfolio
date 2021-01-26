@@ -113,6 +113,7 @@ main ul li {
 
 main ol li {
   list-style-type: upper-alpha;
+  margin-left: 15px;
 }
 
 figcaption {
@@ -149,8 +150,11 @@ body {
 img.image_effect.wp-post-image {
   max-width: 100%;
   height: auto;
+  transition: all 0.3s;
 }
-
+img.image_effect.wp-post-image:hover {
+  filter: blur(1px);
+}
 a {
   color: #063e41;
   transition: 0.3s;
