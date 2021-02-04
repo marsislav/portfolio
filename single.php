@@ -37,8 +37,8 @@
                                             wp_link_pages ($defaults);
                                             ?>
                                     </div>
-                                    <div class="author-info">
-                                        <p><?php _e('Posted by: ', 'mp');?> <a href="<?php echo $author_URL; ?>"> <?php the_author() ;?></a> </p>
+                                    <div class="author-info" itemscope itemtype="https://schema.org/Person">
+                                        <p><?php _e('Posted by: ', 'mp');?> <a href="<?php echo $author_URL; ?>" itemprop="name"> <?php the_author() ;?></a> </p>
                                         <div class="author-bio">
                                             <div class="author-image"><?php echo get_avatar($author_ID, 90, '', false, ['class'=>'avatar-img-class'] ); ?></div>
                                             <div class="author-resume"><?php echo nl2br (get_the_author_meta('description'));?></div>

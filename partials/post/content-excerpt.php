@@ -11,7 +11,7 @@
                     else {?>
                         <div class="entry-image">
                             <a href="<?php the_permalink ();?>">
-                                <img src="<?php echo get_template_directory_uri();?>/img/no-image.png" />
+                                <img src="<?php echo get_template_directory_uri();?>/img/no-image.png" class="image_effect"/>
                             </a>
                         </div>
                    <?php  }
