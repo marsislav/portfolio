@@ -3,6 +3,10 @@
 function mp_misc_customizer_section( $wp_customize ){
 
 
+    $wp_customize->add_setting( 'mp_email_address', array(
+        'default'       =>  'Type your email adress',
+    ));
+
     $wp_customize->add_setting( 'mp_footer_copyright_text', array(
         'default'       =>  'Copyrights &copy; 2021 All Rights Reserved.',
     ));
@@ -22,6 +26,16 @@ function mp_misc_customizer_section( $wp_customize ){
         'priority'      =>  30
     ]);
 
+    $wp_customize->add_control(new WP_Customize_Control(
+        $wp_customize,
+        'mp_email_address',
+        array(
+            'label'                 =>  __( 'Email address for contact form', 'mp' ),
+            'section'               => 'mp_misc_section',
+            'settings'              => 'mp_email_address',
+            'type'                  =>  'text'
+        )
+    ));
 
     $wp_customize->add_control(new WP_Customize_Control(
         $wp_customize,
