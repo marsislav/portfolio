@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
     mail($to,$subject,$message,$headers);
     
     mail($from,$subject2,$message2,$headers2); 
-     echo __('Mail Sent. Thank you ', 'mp') . $first_name . __(', we will contact you shortly.', 'mp');
+     echo "<p class='success'>".__('Mail Sent. Thank you ', 'mp') . $first_name . __(', we will contact you shortly! :)', 'mp'). "</p>";
 
     }
 

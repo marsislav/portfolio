@@ -676,6 +676,12 @@ form * {
 .contactForm {
   margin-top: 40px;
 }
+.success {
+  margin-top: 50px;
+  font-size: 22px;
+  color: #3b97a4;
+}
+
 .comment-form,
 .comment-notes {
   margin: 15px 0;
