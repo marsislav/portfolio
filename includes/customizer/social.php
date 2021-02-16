@@ -1,22 +1,39 @@
 <?php
     function mp_social_customizer_section ($wp_customize) {
         $wp_customize->add_setting('mp_facebook_handle', [
-            'default'=> ''
+            'default'=> '',
+		    'sanitize_callback' => 'wp_filter_nohtml_kses'
+
         ]);
         $wp_customize->add_setting('mp_twitter_handle', [
-            'default'=> ''
+            'default'=> '',
+		    'sanitize_callback' => 'wp_filter_nohtml_kses'
+
         ]);
         $wp_customize->add_setting('mp_instagram_handle', [
-            'default'=> ''
+            'default'=> '',
+		    'sanitize_callback' => 'wp_filter_nohtml_kses'
+
         ]);
         $wp_customize->add_setting('mp_linkedin_handle', [
-            'default'=> ''
+            'default'=> '',
+		    'sanitize_callback' => 'wp_filter_nohtml_kses'
+
         ]);
         $wp_customize->add_setting('mp_email', [
-            'default'=> ''
+            'default'=> '',
+		    'sanitize_callback' => 'wp_filter_nohtml_kses'
+
+        ]);
+        $wp_customize->add_setting('mp_skype', [
+            'default'=> '',
+		    'sanitize_callback' => 'wp_filter_nohtml_kses'
+
         ]);
         $wp_customize->add_setting('mp_phone_number', [
-            'default'=> ''
+            'default'=> '',
+		    'sanitize_callback' => 'wp_filter_nohtml_kses'
+
         ]);
         $wp_customize->add_section('mp_social_section', [
             'title'=> __('Marsislav Portfolio Social settings', 'mp'),
@@ -75,6 +92,17 @@
                                'section' => 'mp_social_section',
                                'settings' =>'mp_email',
                                'type'=>'text'
+                            )
+                            ));
+
+                        $wp_customize->add_control(new WP_Customize_Control(
+                            $wp_customize,
+                            'mp_skype',
+                            array (
+                                'label' => __('Skype Handle', 'mp'),
+                                'section' => 'mp_social_section',
+                                'settings' =>'mp_skype',
+                                'type'=>'text'
                             )
                             ));
 

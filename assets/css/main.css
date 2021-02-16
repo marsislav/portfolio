@@ -214,6 +214,9 @@ a.mainButton {
 .wp-caption-text {
   text-align: center;
 }
+.hidden {
+  display: none;
+}
 /*END OF GLOBAL*/
 /*MAIN MENU*/
 
@@ -667,6 +670,12 @@ main .posts-navigation {
   padding: 10px;
   display: flex;
 }
+form * {
+  text-align: left;
+}
+.contactForm {
+  margin-top: 40px;
+}
 .comment-form,
 .comment-notes {
   margin: 15px 0;
@@ -674,15 +683,27 @@ main .posts-navigation {
 .comment-area textarea,
 .comment-author-field input,
 .comment-email-field input,
-.comment-url-field input {
+.comment-url-field input,
+main input.cFirstName,
+main input.cLastName,
+main input.cEmail,
+main input.cPhone,
+main textarea.cMessage {
   width: 100%;
   outline: none;
   border: 1px solid rgba(8, 71, 76, 0.4);
+  text-align: left;
+  font-size: 17px;
 }
 .comment-area,
 .comment-author-field,
 .comment-email-field,
-.comment-url-field {
+.comment-url-field,
+main input.cFirstName,
+main input.cLastName,
+main input.cEmail,
+main input.cPhone,
+main textarea.cMessage {
   margin: 5px 0;
 }
 .comments-form ol.comments-list li {

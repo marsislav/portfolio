@@ -26,6 +26,9 @@
                     <?php if (get_theme_mod ('mp_email') ) {?>
                          <li> <a href="mailto:<?php echo get_theme_mod('mp_email'); ?>"><i class="fas fa-envelope"></i></a> </li>
                     <?php } ?>
+                    <?php if (get_theme_mod ('mp_skype') ) {?>
+                         <li> <a href="skype:<?php echo get_theme_mod('mp_skype'); ?>?chat"><i class="fab fa-skype"></i></a> </li>
+                    <?php } ?>
                     <?php if (get_theme_mod ('mp_phone_number') ) {?>
                          <li> <a href="tel:<?php echo get_theme_mod('mp_phone_number'); ?>"><i class="fas fa-phone-square-alt"></i></a> </li>
                     <?php } ?>

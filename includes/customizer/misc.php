@@ -5,18 +5,22 @@ function mp_misc_customizer_section( $wp_customize ){
 
     $wp_customize->add_setting( 'mp_email_address', array(
         'default'       =>  'Type your email adress',
+        'sanitize_callback' => 'wp_filter_nohtml_kses'
     ));
 
     $wp_customize->add_setting( 'mp_footer_copyright_text', array(
         'default'       =>  'Copyrights &copy; 2021 All Rights Reserved.',
+        'sanitize_callback' => 'wp_filter_nohtml_kses'
     ));
 
     $wp_customize->add_setting( 'mp_footer_tos_page', array(
         'default'       =>  0,
+        'sanitize_callback' => 'absint'
     ));
 
     $wp_customize->add_setting( 'mp_footer_privacy_page', array(
         'default'       =>  0,
+        'sanitize_callback' => 'absint'
     ));
 
 
